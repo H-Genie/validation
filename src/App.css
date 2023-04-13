@@ -1,0 +1,53 @@
+.control {
+    border: 1px solid #dfe1f0;
+    outline: none;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    background-color: #f6f7ff;
+    color: inherit;
+    border-radius: 6px;
+    margin: 8px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.bars {
+    margin: 8px 0;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #dfe1f0;
+}
+
+.bars div {
+    height: 6px;
+    border-radius: 3px;
+    transition: 0.4s;
+    width: 0%;
+}
+
+.bars.weak div {
+    background-color: #e24c71;
+    width: calc(100% / 3);
+}
+
+.bars.medium div {
+    background-color: #f39845;
+    width: calc(100% / 3 * 2);
+}
+
+.bars.strong div {
+    background-color: #57c558;
+    width: 100%;
+}
+
+.strength {
+    text-align: center;
+    height: 30px;
+    text-transform: capitalize;
+    color: #868b94;
+}
